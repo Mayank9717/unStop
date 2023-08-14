@@ -23,7 +23,7 @@ const Assesment = () => {
     setIsModalOpen(false);
   };
   return (
-    <div className="m-0 md:md-2 md:rounded-md rounded-none bg-white rounded-md md:h-screen h-auto shadow-md p-4 text-gray-500 relative">
+    <div className="m-0 md:m-2 md:rounded-md rounded-none bg-white rounded-md md:h-[98vh] h-auto shadow-md p-4 text-gray-500 relative">
       <button
         className="fixed block md:hidden bottom-4 right-4 p-3 bg-blue-500 text-white rounded-full shadow-lg hover:bg-blue-700"
         onClick={openModal}

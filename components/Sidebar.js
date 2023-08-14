@@ -8,7 +8,7 @@ import {
 const Sidebar = () => {
   return (
     <>
-      <div className="bg-white py-6">
+      <div className="bg-white py-6 h-full">
         <ul className="space-y-8">
           <li className="cursor-pointer px-3 py-4 font-semibold text-xs text-sky-700 my-4 mx-4 flex items-center justify-center flex-col hover:bg-blue-50 border-transparent hover:border-blue-500 border rounded-md hover:text-blue-500">
             <UilCreateDashboard className="mr-2" /> Dashboard
