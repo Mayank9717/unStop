@@ -20,7 +20,7 @@ export default function Home() {
   // Handle Search
   useEffect(() => {
     const filtered = data.filter((item) =>
-      item.toLowerCase().includes(searchTerm.toLowerCase())
+      item.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
     setFilteredData(filtered);
   }, [searchTerm, data]);
