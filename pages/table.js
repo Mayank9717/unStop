@@ -20,7 +20,7 @@ export default function Home() {
   // Handle Search
   useEffect(() => {
     const filtered = data.filter((item) =>
-      item.name.toLowerCase().includes(searchTerm.toLowerCase())
+      item.toLowerCase().includes(searchTerm.toLowerCase())
     );
     setFilteredData(filtered);
   }, [searchTerm, data]);
@@ -75,7 +75,7 @@ export default function Home() {
           </tr>
         </thead>
         <tbody>
-          {filteredDat.map((user) => (
+          {filteredData.map((user) => (
             <tr key={user.id} className="hover:bg-gray-100">
               <td className="border border-gray-300 px-4 py-2">{user.id}</td>
               <td className="border border-gray-300 px-4 py-2">{user.name}</td>
